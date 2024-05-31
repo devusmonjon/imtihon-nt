@@ -1469,7 +1469,7 @@ body {
                 }
             }
         }
-        &__btns:not(.mobile, .explore-btn) {
+        &__btns:not(.mobile, .explore-btns) {
             display: none !important;
         }
         &__btns.mobile {
