@@ -1326,13 +1326,24 @@ body {
             margin-bottom: 48px;
         }
         &__right {
+            width: 100%;
             flex-direction: column;
             > div {
                 margin-bottom: 48px;
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
             }
         }
         &__form {
             margin-bottom: 48px;
+        }
+        &__list {
+            display: none;
+            &.mobile,
+            &.form {
+                display: flex !important;
+            }
         }
     }
 }
@@ -1614,15 +1625,6 @@ body {
                     border-color: $dark-color !important;
                     background: transparent !important;
                 }
-            }
-        }
-    }
-    .footer {
-        &__list {
-            display: none;
-            &.mobile,
-            &.form {
-                display: flex !important;
             }
         }
     }
